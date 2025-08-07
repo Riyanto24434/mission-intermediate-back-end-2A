@@ -13,4 +13,5 @@
 - PATCH /course/:id
 - DELETE /course/:id
 
-## Status: ✅ DONE
+## Status:
+✅ Project selesai dan telah diuji melalui Postman
