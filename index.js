@@ -1,16 +1,15 @@
-const express = require('express');
+// index.js
+const express = require('express'); 
 const bodyParser = require('body-parser');
-const courseRoutes = require('./courseRoute'); // pastikan nama file sesuai
+const courseRoutes = require('./routes/courseRoute'); 
+require('./db');
+
 const app = express();
 const PORT = 3000;
 
-// Middleware
 app.use(bodyParser.json());
-
-// Routes
 app.use('/', courseRoutes);
 
-// Server start
 app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`);
 });
